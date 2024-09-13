@@ -1,6 +1,6 @@
 // Function to build the metadata panel
 function buildMetadata(sample) {
-  d3.json("https://raw.githubusercontent.com/wmk7137/belly-button-challenge/main/samples.json").then((data) => {
+  d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
     const metadata = data.metadata;
 
     // Filter metadata for the selected sample
@@ -22,7 +22,7 @@ function buildMetadata(sample) {
 
 // Function to build both charts
 function buildCharts(sample) {
-  d3.json("https://raw.githubusercontent.com/wmk7137/belly-button-challenge/main/samples.json").then((data) => {
+  d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
     // Get the samples field
     const samples = data.samples;
 
@@ -88,7 +88,7 @@ function buildCharts(sample) {
 
 // Function to run on page load
 function init() {
-  d3.json("https://raw.githubusercontent.com/wmk7137/belly-button-challenge/main/samples.json").then((data) => {
+  d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
 
     const sampleNames = data.names;
 
